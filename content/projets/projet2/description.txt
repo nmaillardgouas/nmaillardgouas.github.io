@@ -1,0 +1,1 @@
+Développement d'une interface web interactive permettant d'interagir en temps réel avec une grille de pixels partagée. Le projet met l'accent sur les échanges client-serveur et la manipulation dynamique du DOM.

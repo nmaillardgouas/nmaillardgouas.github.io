@@ -1,0 +1,1 @@
+Java, JavaFX, NetBeans, Git / GitLab, JGraphT, Programmation Orientée Objet, Maven

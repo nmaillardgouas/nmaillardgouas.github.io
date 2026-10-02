@@ -1,0 +1,1 @@
+Application complète fonctionnelle respectant les 5 objectifs du sujet, Intégration des monstres et du système de plus court chemin (JGraphT), Interface graphique JavaFX opérationnelle avec gestion des événements clavier, Journal de bord complet et diagrammes UML normalisés livrés

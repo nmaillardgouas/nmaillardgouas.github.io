@@ -1,0 +1,115 @@
+[
+  {
+    "id": "projet1",
+    "titre": "COMPILEX - Bot Discord Communautaire",
+    "description": "Création et déploiement d'un bot Discord multifonction conçu pour répondre aux besoins d'une communauté étudiante, regroupant des outils de modération, des commandes utilitaires et la centralisation des informations importantes.",
+    "technologie": "JavaScript (Node.js), Discord.js, Visual Studio Code, Git / GitHub",
+    "badges": [
+      "JS"
+    ],
+    "objectif": "Centraliser la communication de 110 étudiants, Un seul bot multifonction (Modération, utilitaire, ...), Délai de 4 semaines",
+    "resultat": "85 / 110 étudiants sur le serveur, 77% de la promotion",
+    "image": "./content/projets/projet1/image.png"
+  },
+  {
+    "id": "projet2",
+    "titre": "PIXELWAR",
+    "description": "Développement d'une interface web interactive permettant d'interagir en temps réel avec une grille de pixels partagée. Le projet met l'accent sur les échanges client-serveur et la manipulation dynamique du DOM.",
+    "technologie": "HTML, CSS, JavaScript, API REST, Swagger, Visual Studio Code",
+    "badges": [
+      "HTML5",
+      "CSS3",
+      "JS"
+    ],
+    "objectif": "Concevoir une interface utilisateur interactive en HTML, CSS et JavaScript, Intégrer et exploiter une API REST documentée avec Swagger, Synchroniser le tableau de pixels avec les actions des autres joueurs, Découvrir les échanges client-serveur et les requêtes HTTP",
+    "resultat": "18 / 20 obtenu lors de l'évaluation, 16 h de développement, 100 % des fonctionnalités attendues réalisées, Mario Pixel créé en bonus sur le tableau",
+    "image": "./content/projets/projet2/image.png"
+  },
+  {
+    "id": "projet3",
+    "titre": "WEB - Refonte d'un site de réparation informatique.",
+    "description": "Modernisation complète d'un ancien site web de réparation informatique en une interface moderne, fluide et responsive, garantissant une navigation optimisée et un formulaire de contact fonctionnel.",
+    "technologie": "HTML5, CSS3, Visual Studio Code, Live Server, Git",
+    "badges": [
+      "HTML5",
+      "CSS3"
+    ],
+    "objectif": "Moderniser l'image d'une entreprise de réparation informatique, Développer un site web complet en HTML et CSS, Concevoir un formulaire de contact avec validation des données, Réalisation du projet en 3 semaines",
+    "resultat": "18 / 20 obtenu lors de l'évaluation, 3 pages fonctionnelles (Accueil, Services, Contact), Formulaire de validation des champs (email et téléphone), Projet terminé 1 semaine avant la date limite",
+    "image": "./content/projets/projet3/image.png"
+  },
+  {
+    "id": "projet4",
+    "titre": "LA SYMPHONIE DES CORDES - Activité pédagogique autour des bases de données",
+    "description": "Création et développement d'une activité interactive et ludique pour faire découvrir les bases de données et le langage SQL au grand public lors de la JPO, en s'appuyant sur un scénario original inspiré de la musique.",
+    "technologie": "SQL Server Management Studio, Win'Design, HTML5, CSS3, JavaScript, Visual Studio Code",
+    "badges": [
+      "HTML5",
+      "CSS3",
+      "JS"
+    ],
+    "objectif": "Concevoir une activité pédagogique et ludique pour la JPO, Créer et exploiter une base de données relationnelle, Initier les visiteurs aux requêtes SQL, Valoriser les enseignements du BUT Informatique",
+    "resultat": "17 / 20 obtenu lors de l'évaluation, ~ 100 visiteurs ont participé à l'activité, Activité élue parmi les préférées des participants, Projet livré à temps et entièrement fonctionnel",
+    "image": "./content/projets/projet4/image.png"
+  },
+  {
+    "id": "projet5",
+    "titre": "MACHINE VIRTUELLE - Environnement Linux Virtuelisé",
+    "description": "Installation et configuration complète d'une machine virtuelle Linux, mise en place d'utilisateurs aux rôles distincts et déploiement d'un environnement de développement en ligne de commande.",
+    "technologie": "Ubuntu Linux, VirtualBox, VMware, Git, Bash / Terminal Linux",
+    "badges": [
+      "Bash"
+    ],
+    "objectif": "Installer et configurer une machine virtuelle Linux, Créer plusieurs utilisateurs avec rôles et permissions distincts, Installer et configurer les outils de développement en ligne de commande, Réaliser le projet en 2 semaines",
+    "resultat": "17 / 20 obtenu lors de l'évaluation, 2 utilisateurs configurés (Alice administratrice, Bob développeur), 8 minutes pour reconstruire entièrement l'environnement, Projet livré dans les délais",
+    "image": "./content/projets/projet5/image.png"
+  },
+  {
+    "id": "projet6",
+    "titre": "BIOSPHERE - Développement d'un jeu stratégique et d'une intelligence artificielle",
+    "description": "Conception et développement d'un jeu de plateau stratégique en Java basé sur la gestion d'un écosystème. Les joueurs plantent des arbres, gèrent leur croissance et optimisent leurs actions pour maximiser leur score. De nouvelles mécaniques sont ajoutées au fil des niveaux (fertilisation, ombrage, gestion des ressources, etc.). Une intelligence artificielle basée sur l'algorithme Monte Carlo Tree Search (MCTS) affronte les autres IA.",
+    "technologie": "Java, Visual Studio Code, Git, Monte Carlo Tree Search (MCTS), Algorithmes de recherche et d'optimisation",
+    "badges": [
+      "Java"
+    ],
+    "objectif": "Développer un jeu de plateau stratégique en Java, Concevoir une intelligence artificielle compétitive, Implémenter progressivement de nouvelles mécaniques de jeu, Optimiser la prise de décision et les performances de l'IA",
+    "resultat": "17 / 20 pour le développement du jeu, 15 / 20 pour l'intelligence artificielle, 12 niveaux sur 16 (mieux que plus de 90 % de la promotion), IA fonctionnelle basée sur l'algorithme Monte Carlo Tree Search (MCTS)",
+    "image": "./content/projets/projet6/image.png"
+  },
+  {
+    "id": "projet7",
+    "titre": "LABYRINTHE JAVA - Développement incrémental d'une application JavaFX de gestion de labyrinthes multi-étages avec personnages, monstres et intelligence artificielle de plus court chemin",
+    "description": "Réalisation en autonomie d'un projet de programmation orientée objet en Java (BUT Informatique). Le projet consiste à concevoir un labyrinthe à plusieurs étages, gérer les déplacements d'un héros via les interactions clavier, implémenter des monstres au comportement aléatoire ou guidé par des algorithmes de plus courts chemins (via la bibliothèque JGraphT), et intégrer un rendu graphique dynamique et fluide sous JavaFX avec gestion d'éclairage localisé.",
+    "technologie": "Java, JavaFX, NetBeans, Git / GitLab, JGraphT, Programmation Orientée Objet, Maven",
+    "badges": [
+      "Java"
+    ],
+    "objectif": "Dessiner et charger les étages d'un labyrinthe depuis un fichier texte, Gérer les déplacements du héros et des monstres (polymorphisme), Implémenter des améliorations graphiques (animations fluides, éclairage localisé), Intégrer la bibliothèque JGraphT pour le calcul des plus courts chemins",
+    "resultat": "Application complète fonctionnelle respectant les 5 objectifs du sujet, Intégration des monstres et du système de plus court chemin (JGraphT), Interface graphique JavaFX opérationnelle avec gestion des événements clavier, Journal de bord complet et diagrammes UML normalisés livrés",
+    "image": "./content/projets/projet7/image.png"
+  },
+  {
+    "id": "projet8",
+    "titre": "ODOMO - Centrale domotique connectée",
+    "description": "Conception et développement d'une application de centrale domotique interactive permettant de suivre en temps réel les données environnementales intérieures et extérieures, ainsi que de planifier et configurer finement les modes et créneaux de chauffage de l'habitat.",
+    "technologie": "Java, Node.js, Git, Visual Studio Code",
+    "badges": [
+      "Java"
+    ],
+    "objectif": "Concevoir une interface de pilotage domotique intuitive et ergonomique, Intégrer un module de gestion des créneaux horaires de chauffage (éco / normal), Afficher des graphiques et histogrammes de suivi (météo, pluviométrie sur 24h), Structurer le code en modules réutilisables (classes Chauffage, affichage, etc.)",
+    "resultat": "18 / 20 obtenu lors de l'évaluation, Interface entièrement fonctionnelle avec double mode (météo / chauffage), Gestion complète de la matrice des créneaux horaires sur 7 jours, Code modulaire et propre validé par les tests",
+    "image": "./content/projets/projet8/image.png"
+  },
+  {
+    "id": "projet9",
+    "titre": "JARVIS - Assistant Vocal Intelligent",
+    "description": "Développement d'un assistant vocal intelligent et personnalisé en Python. Conçu pour faciliter le quotidien et automatiser des tâches, il combine les capacités d'intelligence artificielle de l'API Gemini et une solution locale de secours (Ollama).",
+    "technologie": "Python, Gemini API, Ollama, Speech Recognition, Edge TTS, Pygame, IMAP (Gmail), Open-Meteo API",
+    "badges": [
+      "Python"
+    ],
+    "objectif": "Automatisation vocale des tâches quotidiennes, Double IA : Gemini + Ollama local, Reconnaissance vocale et synthèse audio naturelle, Alertes e-mail automatisées",
+    "resultat": "Assistant vocal avec modes standard et continu, Bascule automatique vers l’IA locale, Lecture et notifications des e-mails importants toutes les 5 min",
+    "image": "./content/projets/projet9/image.png"
+  }
+]

@@ -1,0 +1,675 @@
+/* --- 1. CONFIGURATION GLOBALE & VARIABLES --- */
+:root {
+  --font-sans: 'Inter', 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --bg-color: #FAFAFA;
+  --text-main: #171717;
+  --text-muted: #6B7280;
+  --card-bg: #FFFFFF;
+  --card-border: #E5E7EB;
+  --accent: #6366F1; /* Indigo / Violet moderne */
+  --accent-hover: #4F46E5;
+  --radius: 12px;
+  --max-width: 1140px; /* Alignement au cordeau sur 3 colonnes de 360px + gaps */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- 2. NAVIGATION --- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 28px 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--text-main);
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* --- 3. HEADER & TITRES --- */
+header {
+  max-width: var(--max-width);
+  margin: 40px auto 20px auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+/* --- 4. BARRE DE RECHERCHE --- */
+.search-container {
+  margin-top: 24px;
+  width: 100%;
+}
+
+#search-input {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px 16px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  color: var(--text-main);
+  outline: none;
+  font-family: var(--font-sans);
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+#search-input::placeholder {
+  color: var(--text-muted);
+}
+
+#search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+/* --- 5. CONTENEUR PRINCIPAL & GRILLE DES PROJETS --- */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+}
+
+.second_container {
+  display: grid;
+  grid-template-columns: repeat(3, 360px); /* Force exactement 3 colonnes de 360px */
+  justify-content: center;                 /* Centre la grille par rapport à la page */
+  gap: 24px;                               /* Espacement régulier horizontal et vertical */
+  margin-top: 32px;
+}
+
+/* --- 6. FORMATAGE UNIFORME DES CARTES --- */
+.carte {
+  width: 360px;
+  height: 440px; /* Force une hauteur identique pour toutes les cartes */
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.carte:hover {
+  transform: translateY(-3px);
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+.carte img {
+  width: 100%;
+  height: 180px; /* Hauteur fixe pour toutes les images de la grille */
+  object-fit: cover;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- TRONCATURE DE LA DESCRIPTION (3 points de suspension) --- */
+.card-content p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  
+  /* Coupe le texte proprement sur 3 lignes max avec points de suspension */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- 7. BADGES DE TECHNOLOGIES --- */
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--card-border);
+}
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  padding: 3px 9px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #475569;
+  border-radius: 6px;
+}
+
+.tech-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* --- 8. PAGE DE DÉTAIL DU PROJET --- */
+#detail-container {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 40px;
+  margin-top: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+main a[href="projet.html"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-main);
+  background-color: #FFFFFF;
+  border: 1px solid var(--card-border);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+main a[href="projet.html"]:hover {
+  background-color: #F8FAFC;
+  border-color: #CBD5E1;
+  transform: translateX(-2px);
+}
+
+#detail-container h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+#detail-container img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border: 1px solid var(--card-border);
+}
+
+#detail-container section {
+  margin-top: 28px;
+}
+
+#detail-container h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 6px;
+}
+
+#detail-container p {
+  color: var(--text-muted);
+  line-height: 1.65;
+  font-size: 0.98rem;
+}
+
+#detail-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: var(--text-muted);
+}
+
+#detail-container li {
+  margin-bottom: 6px;
+}
+
+/* --- 9. MISE EN PAGE DE LA SECTION ACCUEIL (HERO) --- */
+.hero-section {
+  max-width: var(--max-width);
+  margin: 40px auto 20px auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.hero-img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+/* --- 10. EN-TÊTE DE SECTION PROJETS SUR L'ACCUEIL --- */
+.section-header {
+  max-width: var(--max-width);
+  margin: 50px auto 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.section-header h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.btn-voir-plus {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: opacity 0.2s ease;
+}
+
+.btn-voir-plus:hover {
+  opacity: 0.8;
+}
+
+/* --- 11. RESPONSIVE --- */
+@media (max-width: 1180px) {
+  .second_container {
+    grid-template-columns: repeat(2, 360px);
+  }
+}
+
+@media (max-width: 768px) {
+  .second_container {
+    grid-template-columns: 360px;
+  }
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* --- FOOTER --- */
+footer {
+  max-width: var(--max-width);
+  margin: 80px auto 40px auto;
+  padding: 24px 20px 0 20px;
+  border-top: 1px solid var(--card-border);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-name {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+.separator {
+  color: var(--card-border);
+}
+
+.footer-bottom {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* --- 12. PAGE COMPÉTENCES (Style Humain & Épuré) --- */
+.skills-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px 60px 20px;
+}
+
+.skills-grid-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 32px;
+}
+
+@media (max-width: 960px) {
+  .skills-grid-categories {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-category-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-3px);
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.category-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  flex-shrink: 0;
+}
+
+.category-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.category-header p {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  margin-top: 2px;
+}
+
+.skill-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skill-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.skill-item-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.skill-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.skill-info-text strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.skill-info-text span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.level-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.level-badge.advanced {
+  color: #15803d;
+  background-color: #f0fdf4;
+  border: 1px solid #dcfce7;
+}
+
+.level-badge.intermediate {
+  color: #0369a1;
+  background-color: #f0f9ff;
+  border: 1px solid #e0f2fe;
+}
+
+.category-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #E2E8F0;
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+
+/* --- PAGE À PROPOS --- */
+.about-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+}
+
+.about-block {
+  margin-top: 32px;
+  max-width: 760px;
+}
+
+.about-block h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.about-block p {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+/* --- PAGE À PROPOS --- */
+.about-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.about-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.about-card h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* Placement */
+.about-profile   { grid-column: span 2; grid-row: span 2; text-align: center; }
+.about-qui       { grid-column: span 4; }
+.about-parcours  { grid-column: span 4; }
+.about-travail   { grid-column: span 6; }
+.about-recherche { grid-column: span 3; }
+.about-hors-code { grid-column: span 3; }
+
+/* Carte profil */
+.about-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--card-border);
+  margin-bottom: 16px;
+}
+
+.about-role {
+  margin-bottom: 16px;
+}
+
+.about-infos {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-profile,
+  .about-qui,
+  .about-parcours,
+  .about-travail,
+  .about-recherche,
+  .about-hors-code {
+    grid-column: span 6;
+    grid-row: auto;
+  }
+}
+
+nav a.btn-cv {
+  border-style: solid;
+  border-width: 1px;
+  border: (var(text-muted));
+  color: (var(text-muted));
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+nav a.btn-cv:hover {
+}

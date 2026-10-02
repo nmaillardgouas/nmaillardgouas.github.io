@@ -1,0 +1,1 @@
+18 / 20 obtenu lors de l'évaluation, 3 pages fonctionnelles (Accueil, Services, Contact), Formulaire de validation des champs (email et téléphone), Projet terminé 1 semaine avant la date limite

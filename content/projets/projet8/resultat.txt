@@ -1,0 +1,1 @@
+18 / 20 obtenu lors de l'évaluation, Interface entièrement fonctionnelle avec double mode (météo / chauffage), Gestion complète de la matrice des créneaux horaires sur 7 jours, Code modulaire et propre validé par les tests

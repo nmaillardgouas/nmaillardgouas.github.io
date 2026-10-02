@@ -1,0 +1,1 @@
+Installer et configurer une machine virtuelle Linux, Créer plusieurs utilisateurs avec rôles et permissions distincts, Installer et configurer les outils de développement en ligne de commande, Réaliser le projet en 2 semaines

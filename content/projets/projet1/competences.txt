@@ -1,0 +1,1 @@
+API & programmation asynchrone, Architecture modulaire (Handler), Gestion de branches (Git), Travail en équipe & autonomie

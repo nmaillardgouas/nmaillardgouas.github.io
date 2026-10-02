@@ -1,0 +1,1 @@
+17 / 20 obtenu lors de l'évaluation, 2 utilisateurs configurés (Alice administratrice, Bob développeur), 8 minutes pour reconstruire entièrement l'environnement, Projet livré dans les délais

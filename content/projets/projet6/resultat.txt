@@ -1,0 +1,1 @@
+17 / 20 pour le développement du jeu, 15 / 20 pour l'intelligence artificielle, 12 niveaux sur 16 (mieux que plus de 90 % de la promotion), IA fonctionnelle basée sur l'algorithme Monte Carlo Tree Search (MCTS)

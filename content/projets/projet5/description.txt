@@ -1,0 +1,1 @@
+Installation et configuration complète d'une machine virtuelle Linux, mise en place d'utilisateurs aux rôles distincts et déploiement d'un environnement de développement en ligne de commande. On a mit en place un "méchant" violoncelle. Pour le battre, nous devons trouver les réponses aux questions à l'aide de requête SQL.

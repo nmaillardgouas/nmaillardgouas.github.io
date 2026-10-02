@@ -1,0 +1,1 @@
+Programmation Orientée Objet en Java, Utilisation de bibliothèques externes (JGraphT, JavaFX), Modélisation UML, Gestion de versions (Git), Algorithmique des graphes et plus courts chemins, Résolution de problèmes et autonomie

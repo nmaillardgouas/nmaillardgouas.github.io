@@ -1,0 +1,1 @@
+Concevoir une interface utilisateur interactive en HTML, CSS et JavaScript, Intégrer et exploiter une API REST documentée avec Swagger, Synchroniser le tableau de pixels avec les actions des autres joueurs, Découvrir les échanges client-serveur et les requêtes HTTP

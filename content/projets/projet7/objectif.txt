@@ -1,0 +1,1 @@
+Dessiner et charger les étages d'un labyrinthe depuis un fichier texte, Gérer les déplacements du héros et des monstres (polymorphisme), Implémenter des améliorations graphiques (animations fluides, éclairage localisé), Intégrer la bibliothèque JGraphT pour le calcul des plus courts chemins

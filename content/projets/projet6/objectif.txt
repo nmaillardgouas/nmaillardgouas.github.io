@@ -1,0 +1,1 @@
+Développer un jeu de plateau stratégique en Java, Concevoir une intelligence artificielle compétitive, Implémenter progressivement de nouvelles mécaniques de jeu, Optimiser la prise de décision et les performances de l'IA

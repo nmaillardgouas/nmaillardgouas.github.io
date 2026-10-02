@@ -1,0 +1,1 @@
+Modélisation et conception de bases de données, Création de requêtes SQL (SELECT, WHERE, JOIN, SUM), Conception d'activités pédagogiques interactives, Développement web front-end, Travail en équipe et coordination de projet, Vulgarisation de notions informatiques auprès du grand public

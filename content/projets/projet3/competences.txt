@@ -1,0 +1,1 @@
+Intégration web (HTML / CSS), Structuration et organisation d'un site multi-pages, Validation et traitement des formulaires, Gestion du temps et autonomie, Gestion de versions avec Git, Conception d'interfaces plus ergonomiques

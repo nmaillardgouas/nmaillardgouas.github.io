@@ -1,0 +1,8 @@
+{
+  "name": "mon-portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build:projets": "node generer-json.js"
+  }
+}

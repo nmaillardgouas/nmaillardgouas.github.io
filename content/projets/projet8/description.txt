@@ -1,0 +1,1 @@
+Conception et développement d'une application de centrale domotique interactive permettant de suivre en temps réel les données environnementales intérieures et extérieures, ainsi que de planifier et configurer finement les modes et créneaux de chauffage de l'habitat.

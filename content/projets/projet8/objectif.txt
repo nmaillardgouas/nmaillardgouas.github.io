@@ -1,0 +1,1 @@
+Concevoir une interface de pilotage domotique intuitive et ergonomique, Intégrer un module de gestion des créneaux horaires de chauffage (éco / normal), Afficher des graphiques et histogrammes de suivi (météo, pluviométrie sur 24h), Structurer le code en modules réutilisables (classes Chauffage, affichage, etc.)

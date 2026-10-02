@@ -1,0 +1,1 @@
+Python, Gemini API, Ollama, Speech Recognition, Edge TTS, Pygame, IMAP (Gmail), Open-Meteo API

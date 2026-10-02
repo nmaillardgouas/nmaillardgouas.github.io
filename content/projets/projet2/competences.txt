@@ -1,0 +1,1 @@
+Développement web Front-End, Manipulation du DOM en JavaScript, Utilisation d'API REST (Fetch), Lecture de documentation Swagger, Intégration HTML / CSS / JavaScript, Autonomie et gestion du temps

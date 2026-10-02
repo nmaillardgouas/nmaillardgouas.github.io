@@ -1,0 +1,1 @@
+Administration système Linux, Scripting Bash et automatisation, Gestion des utilisateurs et des permissions (chmod, chown), Utilisation du terminal et de la ligne de commande, Résolution de problèmes techniques

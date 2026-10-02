@@ -1,0 +1,1 @@
+Création et déploiement d'un bot Discord multifonction conçu pour répondre aux besoins d'une communauté étudiante, regroupant des outils de modération, des commandes utilitaires et la centralisation des informations importantes.

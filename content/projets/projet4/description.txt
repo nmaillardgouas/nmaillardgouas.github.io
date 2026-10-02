@@ -1,0 +1,1 @@
+Création et développement d'une activité interactive et ludique pour faire découvrir les bases de données et le langage SQL au grand public lors de la JPO, en s'appuyant sur un scénario original inspiré de la musique.

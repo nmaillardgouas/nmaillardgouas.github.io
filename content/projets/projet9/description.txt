@@ -1,0 +1,1 @@
+Développement d'un assistant vocal intelligent et personnalisé en Python. Conçu pour faciliter le quotidien et automatiser des tâches, il combine les capacités d'intelligence artificielle de l'API Gemini et une solution locale de secours (Ollama).

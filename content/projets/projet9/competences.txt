@@ -1,0 +1,1 @@
+Développement Python avancé, Intégration d'API et de modèles de langage (LLM), Traitement audio, reconnaissance et synthèse vocale, Automatisation de tâches et gestion de processus en arrière-plan, Connexion aux services web (IMAP, Météo)
