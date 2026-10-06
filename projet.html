@@ -1,32 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projets - Nolan Maillard Gouas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
 
-<body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2390D2GHT8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-2390D2GHT8");
+    </script>
+  </head>
+
+  <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="projet.html" style="color: var(--text-main); font-weight: 600;">Projets</a></li>
-            <li><a href="competence.html">Compétences</a></li>
-            <li><a href="apropos.html">A Propos</a></li>
-        </ul>
-        <a href="cv.pdf" download="CV_Nolan_Maillard_Gouas.pdf" class="btn-cv">CV</a>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li>
+          <a
+            href="projet.html"
+            style="color: var(--text-main); font-weight: 600"
+            >Projets</a
+          >
+        </li>
+        <li><a href="competence.html">Compétences</a></li>
+        <li><a href="apropos.html">A Propos</a></li>
+      </ul>
+      <a href="cv.pdf" download="CV_Nolan_Maillard_Gouas.pdf" class="btn-cv"
+        >CV</a
+      >
     </nav>
     <header>
-        <h1>Mes Projets</h1>
-        <p>Clique sur un projet pour voir les détails.</p>
+      <h1>Mes Projets</h1>
+      <p>Clique sur un projet pour voir les détails.</p>
 
-        <!-- La barre de recherche placée ici s'alignera parfaitement avec les titres -->
-        <div class="search-container">
-            <input type="text" id="search-input"
-                placeholder="Rechercher par nom ou technologie (ex: Python, JS, Pixelwar)..." />
-        </div>
+      <!-- La barre de recherche placée ici s'alignera parfaitement avec les titres -->
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Rechercher par nom ou technologie (ex: Python, JS, Pixelwar)..."
+        />
+      </div>
     </header>
 
     <!-- Grille des projets -->
@@ -34,21 +59,30 @@
 
     <!-- Le script de la grille -->
     <script type="module" src="projets-grille.js"></script>
-</body>
-<footer>
+  </body>
+  <footer>
     <div class="footer-content">
-        <span class="footer-name">Nolan Maillard Gouas</span>
-        <div class="footer-links">
-            <a href="https://github.com/nmaillardgouas" target="_blank" rel="noopener">GitHub</a>
-            <span class="separator">·</span>
-            <a href="https://www.linkedin.com/in/nolan-maillard-gouas-1657323a1/" target="_blank" rel="noopener">LinkedIn</a>
-            <span class="separator">·</span>
-            <a href="mailto:nolan.maillard-gouas@etu.u-bordeaux.fr">Email</a>
-        </div>
+      <span class="footer-name">Nolan Maillard Gouas</span>
+      <div class="footer-links">
+        <a
+          href="https://github.com/nmaillardgouas"
+          target="_blank"
+          rel="noopener"
+          >GitHub</a
+        >
+        <span class="separator">·</span>
+        <a
+          href="https://www.linkedin.com/in/nolan-maillard-gouas-1657323a1/"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+        <span class="separator">·</span>
+        <a href="mailto:nolan.maillard-gouas@etu.u-bordeaux.fr">Email</a>
+      </div>
     </div>
     <div class="footer-bottom">
-        <p>© 2026 Nolan — BUT Informatique</p>
+      <p>© 2026 Nolan — BUT Informatique</p>
     </div>
-</footer>
-
+  </footer>
 </html>

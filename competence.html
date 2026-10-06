@@ -1,195 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Compétences — Nolan Maillard Gouas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
 
-<body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2390D2GHT8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-2390D2GHT8");
+    </script>
+  </head>
+
+  <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="projet.html">Projets</a></li>
-            <li><a href="competence.html" style="color: var(--text-main); font-weight: 600;">Compétences</a></li>
-            <li><a href="apropos.html">A Propos</a></li>
-        </ul>
-        <a href="cv.pdf" download="CV_Nolan_Maillard_Gouas.pdf" class="btn-cv">CV</a>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projet.html">Projets</a></li>
+        <li>
+          <a
+            href="competence.html"
+            style="color: var(--text-main); font-weight: 600"
+            >Compétences</a
+          >
+        </li>
+        <li><a href="apropos.html">A Propos</a></li>
+      </ul>
+      <a href="cv.pdf" download="CV_Nolan_Maillard_Gouas.pdf" class="btn-cv"
+        >CV</a
+      >
     </nav>
 
     <header>
-        <h1>Mes compétences</h1>
-        <p>Un aperçu concret de mes compétences, de mes outils et de ma façon de travailler au quotidien.</p>
+      <h1>Mes compétences</h1>
+      <p>
+        Un aperçu concret de mes compétences, de mes outils et de ma façon de
+        travailler au quotidien.
+      </p>
     </header>
 
     <main class="skills-container">
-        <div class="skills-grid-categories">
+      <div class="skills-grid-categories">
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div>
+              <h2>Développement & Code</h2>
+              <p>Ce que j'utilise pour concevoir des applications</p>
+            </div>
+          </div>
 
-            <div class="skill-category-card">
-                <div class="category-header">
-                    <div>
-                        <h2>Développement & Code</h2>
-                        <p>Ce que j'utilise pour concevoir des applications</p>
-                    </div>
-                </div>
+          <div class="category-divider"></div>
 
-                <div class="category-divider"></div>
-
-                <div class="skill-items-list">
-                    <div class="skill-item-row">
-                        <div class="skill-info-text">
-                            <strong>Java & JavaFX</strong>
-                            <span>Mon langage principal en cours, idéal pour la POO et les architectures propres.</span>
-                        </div>
-                        <span class="level-badge advanced">Avancé</span>
-                    </div>
-
-                    <div class="skill-item-row">
-                        <div class="skill-info-text">
-                            <strong>Python</strong>
-                            <span>Utilisé pour l'IA (Gemini/Ollama) et l'automatisation de scripts.</span>
-                        </div>
-                        <span class="level-badge advanced">Avancé</span>
-                    </div>
-
-                    <div class="skill-item-row">
-                        <div class="skill-info-text">
-                            <strong>JavaScript / HTML / CSS</strong>
-                            <span>Pour donner vie aux interfaces web et créer des sites dynamiques.</span>
-                        </div>
-                        <span class="level-badge intermediate">Intermédiaire</span>
-                    </div>
-                </div>
+          <div class="skill-items-list">
+            <div class="skill-item-row">
+              <div class="skill-info-text">
+                <strong>Java & JavaFX</strong>
+                <span
+                  >Mon langage principal en cours, idéal pour la POO et les
+                  architectures propres.</span
+                >
+              </div>
+              <span class="level-badge advanced">Avancé</span>
             </div>
 
-
-            <div class="skill-category-card">
-                <div class="category-header">
-                    <div>
-                        <h2>Données & Modélisation</h2>
-                        <p>Comment je structure et stocke l'information</p>
-                    </div>
-                </div>
-
-                <div class="category-divider"></div>
-
-                <div class="skill-items-list">
-                    <div class="skill-item-row">
-                        <div class="skill-info-text">
-                            <strong>SQL Server & Requêtes</strong>
-                            <span>Écriture de requêtes, jointures et manipulation de données relationnelles.</span>
-                        </div>
-                        <span class="level-badge advanced">Avancé</span>
-                    </div>
-
-                    <div class="skill-item-row">
-                        <div class="skill-info-text">
-                            <strong>UML & Modélisation</strong>
-                            <span>Conception de schémas de bases de données propres avant de coder.</span>
-                        </div>
-                        <span class="level-badge advanced">Avancé</span>
-                    </div>
-                </div>
+            <div class="skill-item-row">
+              <div class="skill-info-text">
+                <strong>Python</strong>
+                <span
+                  >Utilisé pour l'IA (Gemini/Ollama) et l'automatisation de
+                  scripts.</span
+                >
+              </div>
+              <span class="level-badge advanced">Avancé</span>
             </div>
 
-
-            <div class="skill-category-card">
-                <div class="category-header">
-                    <div>
-                        <h2>Outils & Environnement</h2>
-                        <p>Mon setup pour bosser efficacement en équipe</p>
-                    </div>
-                </div>
-
-                <div class="category-divider"></div>
-
-                <div class="skill-items-list">
-                    <div class="skill-item-row">
-                        <div class="skill-info-text">
-                            <strong>Git / GitHub / GitLab</strong>
-                            <span>Indispensable au quotidien pour le versioning et le travail en groupe.</span>
-                        </div>
-                        <span class="level-badge advanced">Avancé</span>
-                    </div>
-
-                    <div class="skill-item-row">
-                        <div class="skill-info-text">
-                            <strong>Linux & Bash</strong>
-                            <span>Commandes de base, gestion des droits et environnements virtuels.</span>
-                        </div>
-                        <span class="level-badge intermediate">Intermédiaire</span>
-                    </div>
-
-                    <div class="skill-item-row">
-                        <div class="skill-info-text">
-                            <strong>VS Code & NetBeans</strong>
-                            <span>Mes environnements de développement de prédilection.</span>
-                        </div>
-                        <span class="level-badge advanced">Avancé</span>
-                    </div>
-                </div>
+            <div class="skill-item-row">
+              <div class="skill-info-text">
+                <strong>JavaScript / HTML / CSS</strong>
+                <span
+                  >Pour donner vie aux interfaces web et créer des sites
+                  dynamiques.</span
+                >
+              </div>
+              <span class="level-badge intermediate">Intermédiaire</span>
             </div>
-
-
-            <div class="skill-category-card">
-                <div class="category-header">
-                    <div>
-                        <h2>Méthodes & Soft Skills</h2>
-                        <p>Comment je fonctionne avec les autres</p>
-                    </div>
-                </div>
-
-                <div class="category-divider"></div>
-
-                <div class="skill-items-list">
-                    <div class="skill-item-row">
-                        <div class="skill-info-text">
-                            <strong>Travail d'équipe & Écoute</strong>
-                            <span>Habitué à coder en groupe sur des projets concrets du BUT.</span>
-                        </div>
-                        <span class="level-badge advanced">Avancé</span>
-                    </div>
-
-                    <div class="skill-item-row">
-                        <div class="skill-info-text">
-                            <strong>Rigueur & Autonomie</strong>
-                            <span>J'aime creuser les sujets par moi-même pour trouver des solutions.</span>
-                        </div>
-                        <span class="level-badge advanced">Avancé</span>
-                    </div>
-
-                    <div class="skill-item-row">
-                        <div class="skill-info-text">
-                            <strong>Documentation & Code propre</strong>
-                            <span>Pour que mon code soit compréhensible par mes camarades (ou moi-même plus
-                                tard).</span>
-                        </div>
-                        <span class="level-badge advanced">Avancé</span>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
+
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div>
+              <h2>Données & Modélisation</h2>
+              <p>Comment je structure et stocke l'information</p>
+            </div>
+          </div>
+
+          <div class="category-divider"></div>
+
+          <div class="skill-items-list">
+            <div class="skill-item-row">
+              <div class="skill-info-text">
+                <strong>SQL Server & Requêtes</strong>
+                <span
+                  >Écriture de requêtes, jointures et manipulation de données
+                  relationnelles.</span
+                >
+              </div>
+              <span class="level-badge advanced">Avancé</span>
+            </div>
+
+            <div class="skill-item-row">
+              <div class="skill-info-text">
+                <strong>UML & Modélisation</strong>
+                <span
+                  >Conception de schémas de bases de données propres avant de
+                  coder.</span
+                >
+              </div>
+              <span class="level-badge advanced">Avancé</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div>
+              <h2>Outils & Environnement</h2>
+              <p>Mon setup pour bosser efficacement en équipe</p>
+            </div>
+          </div>
+
+          <div class="category-divider"></div>
+
+          <div class="skill-items-list">
+            <div class="skill-item-row">
+              <div class="skill-info-text">
+                <strong>Git / GitHub / GitLab</strong>
+                <span
+                  >Indispensable au quotidien pour le versioning et le travail
+                  en groupe.</span
+                >
+              </div>
+              <span class="level-badge advanced">Avancé</span>
+            </div>
+
+            <div class="skill-item-row">
+              <div class="skill-info-text">
+                <strong>Linux & Bash</strong>
+                <span
+                  >Commandes de base, gestion des droits et environnements
+                  virtuels.</span
+                >
+              </div>
+              <span class="level-badge intermediate">Intermédiaire</span>
+            </div>
+
+            <div class="skill-item-row">
+              <div class="skill-info-text">
+                <strong>VS Code & NetBeans</strong>
+                <span
+                  >Mes environnements de développement de prédilection.</span
+                >
+              </div>
+              <span class="level-badge advanced">Avancé</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div>
+              <h2>Méthodes & Soft Skills</h2>
+              <p>Comment je fonctionne avec les autres</p>
+            </div>
+          </div>
+
+          <div class="category-divider"></div>
+
+          <div class="skill-items-list">
+            <div class="skill-item-row">
+              <div class="skill-info-text">
+                <strong>Travail d'équipe & Écoute</strong>
+                <span
+                  >Habitué à coder en groupe sur des projets concrets du
+                  BUT.</span
+                >
+              </div>
+              <span class="level-badge advanced">Avancé</span>
+            </div>
+
+            <div class="skill-item-row">
+              <div class="skill-info-text">
+                <strong>Rigueur & Autonomie</strong>
+                <span
+                  >J'aime creuser les sujets par moi-même pour trouver des
+                  solutions.</span
+                >
+              </div>
+              <span class="level-badge advanced">Avancé</span>
+            </div>
+
+            <div class="skill-item-row">
+              <div class="skill-info-text">
+                <strong>Documentation & Code propre</strong>
+                <span
+                  >Pour que mon code soit compréhensible par mes camarades (ou
+                  moi-même plus tard).</span
+                >
+              </div>
+              <span class="level-badge advanced">Avancé</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <span class="footer-name">Nolan Maillard Gouas</span>
-            <div class="footer-links">
-                <a href="https://github.com/nmaillardgouas" target="_blank" rel="noopener">GitHub</a>
-                <span class="separator">·</span>
-                <a href="https://www.linkedin.com/in/nolan-maillard-gouas-1657323a1/" target="_blank"
-                    rel="noopener">LinkedIn</a>
-                <span class="separator">·</span>
-                <a href="mailto:nolan.maillard-gouas@etu.u-bordeaux.fr">Email</a>
-            </div>
+      <div class="footer-content">
+        <span class="footer-name">Nolan Maillard Gouas</span>
+        <div class="footer-links">
+          <a
+            href="https://github.com/nmaillardgouas"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <span class="separator">·</span>
+          <a
+            href="https://www.linkedin.com/in/nolan-maillard-gouas-1657323a1/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <span class="separator">·</span>
+          <a href="mailto:nolan.maillard-gouas@etu.u-bordeaux.fr">Email</a>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 Nolan — BUT Informatique</p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Nolan — BUT Informatique</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

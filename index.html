@@ -1,70 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil - Nolan Maillard Gouas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
 
-<body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2390D2GHT8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-2390D2GHT8");
+    </script>
+  </head>
+
+  <body>
     <nav>
-        <ul>
-            <li><a href="index.html" style="color: var(--text-main); font-weight: 600;">Accueil</a></li>
-            <li><a href="projet.html">Projets</a></li>
-            <li><a href="competence.html">Compétences</a></li>
-            <li><a href="apropos.html">A Propos</a></li>
-        </ul>
-        <a href="cv.pdf" download="CV_Nolan_Maillard_Gouas.pdf" class="btn-cv">CV</a>
+      <ul>
+        <li>
+          <a href="index.html" style="color: var(--text-main); font-weight: 600"
+            >Accueil</a
+          >
+        </li>
+        <li><a href="projet.html">Projets</a></li>
+        <li><a href="competence.html">Compétences</a></li>
+        <li><a href="apropos.html">A Propos</a></li>
+      </ul>
+      <a href="cv.pdf" download="CV_Nolan_Maillard_Gouas.pdf" class="btn-cv"
+        >CV</a
+      >
     </nav>
 
     <header class="hero-section">
-        <div class="hero-content">
-            <div class="badge-dispo">
-                <span class="pulse-dot"></span>
-                Recherche stage • 8 à 10 semaines dès le 18 janv.
-            </div>
-            <h1>Salut, moi c'est Nolan.</h1>
-            <p>Étudiant en 2<sup>e</sup> année de BUT Informatique, je suis passionné par le développement logiciel et
-                la création de projets concrets. Curieux et rigoureux, j’aime apprendre, expérimenter et développer mes
-                compétences à travers différents projets.</p>
+      <div class="hero-content">
+        <div class="badge-dispo">
+          <span class="pulse-dot"></span>
+          Recherche stage • 8 à 10 semaines dès le 18 janv.
         </div>
-        <div class="hero-img-container">
-            <img src="Photo_Nolan.jpg" alt="Nolan Maillard Gouas" class="hero-img">
-        </div>
+        <h1>Salut, moi c'est Nolan.</h1>
+        <p>
+          Étudiant en 2<sup>e</sup> année de BUT Informatique, je suis passionné
+          par le développement logiciel et la création de projets concrets.
+          Curieux et rigoureux, j’aime apprendre, expérimenter et développer mes
+          compétences à travers différents projets.
+        </p>
+      </div>
+      <div class="hero-img-container">
+        <img
+          src="Photo_Nolan.jpg"
+          alt="Nolan Maillard Gouas"
+          class="hero-img"
+        />
+      </div>
     </header>
 
     <main>
-        <div class="section-header">
-            <h2>Quelques réalisations</h2>
-            <a href="projet.html" class="btn-voir-plus">Voir tous les projets &rarr;</a>
-        </div>
+      <div class="section-header">
+        <h2>Quelques réalisations</h2>
+        <a href="projet.html" class="btn-voir-plus"
+          >Voir tous les projets &rarr;</a
+        >
+      </div>
 
-        <div id="grid-projets-accueil" class="second_container">
-            <p style="color: var(--text-muted);">Chargement des projets...</p>
-        </div>
+      <div id="grid-projets-accueil" class="second_container">
+        <p style="color: var(--text-muted)">Chargement des projets...</p>
+      </div>
     </main>
 
     <script type="module" src="accueil.js"></script>
 
     <footer>
-        <div class="footer-content">
-            <span class="footer-name">Nolan Maillard Gouas</span>
-            <div class="footer-links">
-                <a href="https://github.com/nmaillardgouas" target="_blank" rel="noopener">GitHub</a>
-                <span class="separator">·</span>
-                <a href="https://www.linkedin.com/in/nolan-maillard-gouas-1657323a1/" target="_blank"
-                    rel="noopener">LinkedIn</a>
-                <span class="separator">·</span>
-                <a href="mailto:nolan.maillard-gouas@etu.u-bordeaux.fr">Email</a>
-            </div>
+      <div class="footer-content">
+        <span class="footer-name">Nolan Maillard Gouas</span>
+        <div class="footer-links">
+          <a
+            href="https://github.com/nmaillardgouas"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <span class="separator">·</span>
+          <a
+            href="https://www.linkedin.com/in/nolan-maillard-gouas-1657323a1/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <span class="separator">·</span>
+          <a href="mailto:nolan.maillard-gouas@etu.u-bordeaux.fr">Email</a>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 Nolan — BUT Informatique</p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Nolan — BUT Informatique</p>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
