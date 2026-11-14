@@ -12,6 +12,18 @@
     "image": "./content/projets/projet1/image.png"
   },
   {
+    "id": "projet10",
+    "titre": "Assistant IA de Gestion des E-mails",
+    "description": "Développement d'un assistant en Python qui trie les e-mails entrants et prépare les réponses à ma place. Il s'appuie sur l'API Gemini pour analyser chaque message et sur Google Agenda pour vérifier mes disponibilités avant de proposer un créneau. Pour les demandes importantes, je reçois une notification sur mon téléphone avec des boutons de validation, et je peux aussi dicter ma propre réponse que le bot reformule avant l'envoi.",
+    "technologie": "Python, Gmail API, Google Calendar API, Gemini API, OAuth 2.0, ntfy (notifications push), Requests",
+    "badges": [
+      "Python"
+    ],
+    "objectif": "Gagner du temps sur la gestion de la boîte mail, Vérification automatique des disponibilités via Google Agenda, Réponses rédigées par IA dans le style de l'utilisateur, Garder le dernier mot grâce à une validation humaine",
+    "resultat": "Tri automatique des e-mails (ignorer, répondre, demander validation), Validation depuis le téléphone par notification avec boutons OUI / NON, Réponse personnalisée reformulée dans mon style puis envoyée, Ajout automatique des rendez-vous confirmés à l'agenda, Rapport quotidien d'activité",
+    "image": "./content/projets/projet10/image.png"
+  },
+  {
     "id": "projet2",
     "titre": "PIXELWAR",
     "description": "Développement d'une interface web interactive permettant d'interagir en temps réel avec une grille de pixels partagée. Le projet met l'accent sur les échanges client-serveur et la manipulation dynamique du DOM.",
@@ -55,7 +67,7 @@
   {
     "id": "projet5",
     "titre": "MACHINE VIRTUELLE - Environnement Linux Virtuelisé",
-    "description": "Installation et configuration complète d'une machine virtuelle Linux, mise en place d'utilisateurs aux rôles distincts et déploiement d'un environnement de développement en ligne de commande.",
+    "description": "Installation et configuration complète d'une machine virtuelle Linux, mise en place d'utilisateurs aux rôles distincts et déploiement d'un environnement de développement en ligne de commande. On a mit en place un \"méchant\" violoncelle. Pour le battre, nous devons trouver les réponses aux questions à l'aide de requête SQL.",
     "technologie": "Ubuntu Linux, VirtualBox, VMware, Git, Bash / Terminal Linux",
     "badges": [
       "Bash"

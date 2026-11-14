@@ -1,0 +1,1 @@
+Tri automatique des e-mails (ignorer, répondre, demander validation), Validation depuis le téléphone par notification avec boutons OUI / NON, Réponse personnalisée reformulée dans mon style puis envoyée, Ajout automatique des rendez-vous confirmés à l'agenda, Rapport quotidien d'activité

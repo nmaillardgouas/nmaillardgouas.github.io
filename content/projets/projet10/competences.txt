@@ -1,0 +1,1 @@
+Développement Python, Intégration d'API Google (Gmail, Calendar) et authentification OAuth 2.0, Prompt engineering et intégration de modèles de langage (LLM), Gestion des fuseaux horaires et des quotas d'API, Notifications push et validation à distance, Automatisation de tâches en arrière-plan
